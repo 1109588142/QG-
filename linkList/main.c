@@ -15,7 +15,7 @@ LinkedList getNode(LinkedList h,int n);//获取对应节点
 LinkedList createNode();//创建一个节点
 ElemType *e;
 int main()
-{  
+{  e=(ElemType)malloc(sizeof(ElemType));
     creattemp();
     if(i==1)
     {  

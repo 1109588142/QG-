@@ -81,8 +81,9 @@ Status DeleteList(LNode *p, ElemType *e) {
         printf("该节点已是最后一个节点！"); 
         return ERROR; 
     }
-    LNode *t = p->next;
-    e = &(t->data);
+    LNode *t ;
+    t=p->next;
+    *e = t->data;
     p->next = t->next;
     free(t);
     return SUCCESS;
